@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:background="#000000"
+        android:scaleType="fitCenter"
+        android:src="@drawable/iv_springfield"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideline" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="45dp" />
+
+    <Button
+        android:id="@+id/button_a"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="纯图片"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toStartOf="@+id/button_b"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_b"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="图文并茂"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toStartOf="@+id/button_c"
+        app:layout_constraintStart_toEndOf="@+id/button_a"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_c"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="纯文字"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button_b"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:background="@android:color/holo_green_light"
+        android:text="Springfield M1903"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/detail"
+        app:layout_constraintEnd_toStartOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:padding="12dp"
+        android:text="您好，我是春田M1903，“春田”之名来自于生产厂商，直接念出来，就是“春天的田野”的意思哦。我服役了很长时间，去过了好多地方，历经无数战争，也赢得不少荣誉，现在也有幸为您效劳了。指挥官，让我们愉快相处吧。"
+        android:textColor="#ffffff"
+        android:textSize="16dp"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent" />
+
+    <TextView
+        android:id="@+id/detail_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:padding="12dp"
+        android:text="M1903式步枪因其生产厂商斯普林菲尔德兵工厂而得名斯普林菲尔德步枪（也有译成春田步枪）。是一种手动枪机弹仓式步枪。1903年命名“M1903, 0.30英寸步枪”，作为美军制式步枪。是美国军队在第一次世界大战中的制式装备。该枪是斯普林菲尔德兵工厂在毛瑟兵工厂的特许下研制的，旋转后拉式枪机仿自德国98系列毛瑟步枪，可认为是毛瑟步枪的变型枪。外观上，枪管长度缩短为610毫米，整枪长度比毛瑟步枪短，拉机柄向下弯曲。由容量5发子弹的弹仓供弹，用5发分离式弹夹装弹。该枪配用的M1906式步枪弹（或称0.30-06步枪弹）是在毛瑟式无底缘弹的基础上改进的，成为美国军队以后50年间的标准步枪弹药。该枪加工工艺堪称精良，在各种恶劣环境下，精度和动作可靠性均能保持良好。早期的M1903式步枪还配有杆式刺刀，中等力度的撞击下容易损坏，后改用匕首式刺刀。"
+        android:textColor="#ffffff"
+        android:textSize="14dp"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detail" />
+</android.support.constraint.ConstraintLayout>
